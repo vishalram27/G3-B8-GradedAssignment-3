@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Ticket Tracker Application</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<style>
+		#footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			padding: 12px;
+			background-color: DarkSalmon;
+			color: rgb(0, 0, 0);
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="/admin/tickets">Ticket Tracker Application</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active"><a class="nav-link" href="/admin/tickets">Tickets
+						<span class="sr-only">(current)</span>
+					</a></li>
+				<li class="nav-item"><a class="nav-link" href="/admin/tickets/newticket">New
+						Ticket</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h2 align="center">Viewing Ticket</h2>
+
+		<form action="#" th:action="@{/admin/tickets/saveTicket}" th:object="${tickets}" method="POST">
+
+			<!-- Add hidden form field to handle update -->
+			<input type="hidden" th:field="*{id}" />
+
+			<h6>Title</h6><input type="text" th:field="*{title}" class="form-control mb-6 col-6">
+
+			<h6>Short Description</h6><input type="text" th:field="*{description}" class="form-control mb-6 col-6">
+
+			<h6>Content</h6><input type="text" th:field="*{content}" class="form-control mb-6 col-6"><br>
+
+		</form>
+
+		<hr>
+
+		<a th:href="@{/admin/tickets}"> Back to Ticket List</a>
+	</div>
+</body>
+<div id="footer">
+	<p><b>All right reserved. CopyRights ©2023 Greatlearning. Batch G3-B8-Aug'2023</b></p>
+</div>
+
+</html>
