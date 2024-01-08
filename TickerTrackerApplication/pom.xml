@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.greatlearning</groupId>
-	<artifactId>springboot-thymeleaf-crud-web-app</artifactId>
+	<artifactId>springboot-thymeleaf-cruds-web-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-thymeleaf-crud-web-app</name>
 	<description>G3-B8-Group project for Spring Boot and thymeleaf</description>
