@@ -11,8 +11,8 @@
 	<groupId>net.javaguides</groupId>
 	<artifactId>springboot-thymeleaf-crud-web-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-thymeleaf-crud-web-app</name>
-	<description>Demo project for Spring Boot and thymeleaf</description>
+	<name>springboot-thymeleaf-cruds-web-app</name>
+	<description>G3-B8-Group Project for Spring Boot and thymeleaf</description>
 
 	<properties>
 		<java.version>17</java.version>
